@@ -12,9 +12,12 @@
   Add Server
 </button>
 
-<p>{{ allowNewServer }}</p>
+<!-- Status of button if its enabled or disabled -->
+<!-- <p>{{ allowNewServer }}</p> -->
 <!-- <p [innerText]="allowNewServer"></p> -->
 
-<p>{{ serverCreationStatus }}</p>
+<!-- <p>{{ serverCreationStatus }}</p> -->
+<p *ngIf="serverCreated">Server was created, server name is {{ serverName }}</p>
+
 <app-server></app-server>
 <app-server></app-server>
