@@ -1,1 +1,14 @@
-<p>user-name-assignment works!</p>
+<input
+  type="text"
+  [(ngModel)]="userName"
+  class="form-control"
+  placeholder="Username"
+/>
+<button
+  (click)="onResetUsername()"
+  [disabled]="isDisabled()"
+  class="btn btn-primary"
+>
+  Reset Username
+</button>
+<p>{{ userName }}</p>
