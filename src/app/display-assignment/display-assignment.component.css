@@ -1,3 +1,7 @@
 .changeBackgroundColor {
   background-color: darkcyan;
 }
+
+.whiteTextColor {
+  color: white;
+}
