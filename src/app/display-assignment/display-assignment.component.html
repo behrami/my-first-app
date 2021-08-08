@@ -1,0 +1,18 @@
+<p>display-assignment component!</p>
+
+<button *ngIf="displayBtn; else hideBtn" (click)="onDisplayClick()">
+  Display Details
+</button>
+
+<ng-template #hideBtn>
+  <button (click)="onHideClick()">Hide details</button>
+</ng-template>
+
+<p *ngIf="dispayDetails">{{ details }}</p>
+
+<p
+  *ngFor="let tempClicks of btnClicks"
+  [ngClass]="{ changeBackgroundColor: numClicks > 5 }"
+>
+  {{ tempClicks }}
+</p>

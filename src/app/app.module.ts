@@ -8,9 +8,10 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { UserNameAssignmentComponent } from './user-name-assignment/user-name-assignment.component';
+import { DisplayAssignmentComponent } from './display-assignment/display-assignment.component';
 
 @NgModule({
-  declarations: [AppComponent, ServerComponent, ServersComponent, WarningAlertComponent, SuccessAlertComponent, UserNameAssignmentComponent],
+  declarations: [AppComponent, ServerComponent, ServersComponent, WarningAlertComponent, SuccessAlertComponent, UserNameAssignmentComponent, DisplayAssignmentComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
